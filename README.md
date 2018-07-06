@@ -219,13 +219,13 @@ module.exports = {
 
 Seguindo o sistema de versões major.minor.patch:
 
-* ^: Somente versões que alterem o path e minor
-* ~: Somente versões que alterem o minor
-* \>: Versões maiores que a descrita no package.json
-* \>=: Versões maiores ou igual que a descrita no package.json
-* <: Versões menores que a descrita no package.json
-* <=: Versões menores ou igual que a descrita no package.json
-* (sem prefixo): Versão descrita no package.json
+* **^**: Somente versões que alterem o path e minor
+* **~**: Somente versões que alterem o minor
+* **\>**: Versões maiores que a descrita no package.json
+* **\>=**: Versões maiores ou igual que a descrita no package.json
+* **<**: Versões menores que a descrita no package.json
+* **<=**: Versões menores ou igual que a descrita no package.json
+* **(sem prefixo)**: Versão descrita no package.json
 
 ## Campo scripts no package.json
 
@@ -287,24 +287,24 @@ npm config
 
 São nomes de scripts que são executados automaticamente baseado na ação que ocorre, são eles:
 
-* prepublish: Executado antes do pacote ser empacotado e publicado.
-* prepare: Executado antes e após do pacote ser empacotado e publicado.
-* prepublishOnly: Executado antes do pacote estar preparado e empacotado, apenas com "npm publish"
-* prepack: Executado antes de um empacotamento (npm pack e npm publish)
-* postpack: Executado após os tarball serem gerados e movidos para seu destino
-* publish, postpublish: Executado após o pacote ter sido publicado com "npm publish"
-* preinstall: Executado antes do pacote ter sido instalado com "npm install"
-* install, postinstall: Executado após o pacote ter sido instalado com "npm install"
-* preuninstall, uninstall: Executado antes do pacote ter sido desinstalado com "npm uninstall"
-* postuninstall: Executado após o pacote ter sido desinstalado com "npm uninstall"
-* preversion: Executado antes da mudança de versão com "npm version"
-* version: Executado após a mudança de versão com "npm version", antes do commit
-* postversion: Executado após a mudança de versão com "npm version", após o commit
-* pretest, test, posttest: Executados com o comando "npm test"
-* prestop, stop, poststop: Executados com o comando "npm stop"
-* prestart, start, poststart: Executados com o comando "npm start"
-* prerestart, restart, postrestart: Executados com o comando "npm restart". "npm restart" executará os scripts "stop" e "start" caso um script "restart" não seja fornecido
-* preshrinkwrap, shrinkwrap, postshrinkwrap: Executados com o comando "npm shrinkwrap"
+* **prepublish**: Executado antes do pacote ser empacotado e publicado.
+* **_prepare**: Executado antes e após do pacote ser empacotado e publicado.
+* **prepublishOnly**: Executado antes do pacote estar preparado e empacotado, apenas com "npm publish"
+* **prepack**: Executado antes de um empacotamento (npm pack e npm publish)
+* **postpack**: Executado após os tarball serem gerados e movidos para seu destino
+* **publish, postpublish**: Executado após o pacote ter sido publicado com "npm publish"
+* **preinstall**: Executado antes do pacote ter sido instalado com "npm install"
+* **install, postinstall**: Executado após o pacote ter sido instalado com "npm install"
+* **preuninstall, uninstall**: Executado antes do pacote ter sido desinstalado com "npm uninstall"
+* **postuninstall**: Executado após o pacote ter sido desinstalado com "npm uninstall"
+* **preversion**: Executado antes da mudança de versão com "npm version"
+* **version**: Executado após a mudança de versão com "npm version", antes do commit
+* **postversion**: Executado após a mudança de versão com "npm version", após o commit
+* **pretest, test, posttest**: Executados com o comando "npm test"
+* **prestop, stop, poststop**: Executados com o comando "npm stop"
+* **prestart, start, poststart**: Executados com o comando "npm start"
+* **prerestart, restart, postrestart**: Executados com o comando "npm restart". "npm restart" executará os scripts "stop" e "start" caso um script "restart" não seja fornecido
+* **preshrinkwrap, shrinkwrap, postshrinkwrap**: Executados com o comando "npm shrinkwrap"
 
 ## Ajuda do npm
 
