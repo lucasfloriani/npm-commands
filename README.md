@@ -288,7 +288,7 @@ npm config
 São nomes de scripts que são executados automaticamente baseado na ação que ocorre, são eles:
 
 * **prepublish**: Executado antes do pacote ser empacotado e publicado.
-* **_prepare**: Executado antes e após do pacote ser empacotado e publicado.
+* **prepare**: Executado antes e após do pacote ser empacotado e publicado.
 * **prepublishOnly**: Executado antes do pacote estar preparado e empacotado, apenas com "npm publish"
 * **prepack**: Executado antes de um empacotamento (npm pack e npm publish)
 * **postpack**: Executado após os tarball serem gerados e movidos para seu destino
